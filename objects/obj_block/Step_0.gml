@@ -3,7 +3,7 @@
 
 
 	vspeed = falling_speed
-	if place_meeting(x, y-4, obj_player)
+	if place_meeting(x, y-4, obj_character)
 	{
 		obj_game.player_alive = false
         instance_destroy(obj_player)

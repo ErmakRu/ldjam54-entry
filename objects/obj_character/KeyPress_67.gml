@@ -1,13 +1,11 @@
 /// @description Dash
 
-if (!place_meeting(x - dash_distance_check * facing, y, obj_abstract_collision))
+if (!place_meeting(x, y + 1, obj_abstract_collision))
 {
-	sprite_index = spr_character_dash;
+	exit;
 }
-else
-{
-	sprite_index = spr_character_idle;
-}
+
+sprite_index = spr_character_dash;
 
 dashing = true;
 hspeed = 1 * facing * dash_rate;

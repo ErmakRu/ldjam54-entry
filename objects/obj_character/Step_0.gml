@@ -9,6 +9,15 @@ if (dashing)
 	exit;
 }
 
+if (crawling)
+{
+	if (!place_meeting(x, y - 1, obj_abstract_collision))
+	{
+		crawling = false;
+		sprite_index = spr_character_idle;
+	}
+}
+
 // Get input
 var _move_input_total = 0;
 if (keyboard_check(control_left) || keyboard_check(control_left_alt)) { _move_input_total -= 1; }
@@ -26,6 +35,7 @@ if (place_meeting(x, y + 1, obj_abstract_collision))
 {
 	last_wall_jumped = noone;
 	has_double_jump = true;
+	gravity_multiplier = 1;
 	if ((_move_input_total == 0) || (hspeed * _move_input_total < 0))
 	{
 		hspeed -= hspeed * brake_rate_ground * (1 - dashing);
@@ -44,7 +54,7 @@ if !(place_meeting(x, y + 1, obj_abstract_collision))
 // On ground
 if (place_meeting(x, y + 1, obj_abstract_collision))
 {
-   hspeed += _move_input_total * accel_rate_ground;
+   hspeed += _move_input_total * accel_rate_ground * (1 - crawling / 2);
    jumping = false;
 }
 	   
@@ -55,12 +65,13 @@ if !(place_meeting(x, y + 1, obj_abstract_collision)) && (_move_input_total * dy
    jumping = true;
 }
 // Limit speed to move_rate
-hspeed = clamp(hspeed, -move_rate, move_rate);
+hspeed = clamp(hspeed, -move_rate * (1 - crawling / 2), move_rate * (1 - crawling / 2));
 
 // Gravity
 // Check wall hugging
 if (place_meeting(x + sign(_move_input_total), y, obj_abstract_collision))
 {
+	gravity_multiplier = 1;
 	if ((vspeed < 0) && !place_meeting(x, y + 1, obj_abstract_collision))
 	{
 	   vspeed += gravity_rate;
@@ -69,12 +80,13 @@ if (place_meeting(x + sign(_move_input_total), y, obj_abstract_collision))
 	{
 	   vspeed += wallhug_gravity_rate;
 	}
+	vspeed = clamp(vspeed, -10000, wallhug_gravity_vspeed);
 }
 else
 {
 	if ((vspeed < gravity_vspeed) && !place_meeting(x, y + 1, obj_abstract_collision))
 	{
-	   vspeed += gravity_rate;
+	   vspeed += gravity_rate * gravity_multiplier;
 	}
 }
 
