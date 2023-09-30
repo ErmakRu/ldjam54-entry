@@ -31,6 +31,3 @@ if keyboard_check(vk_nokey) {
 	}
 }
 
-if (obj_block.grabbed) {
-	obj_block.x = obj_player.x
-}

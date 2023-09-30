@@ -5,11 +5,10 @@ x = (grid_width * 7)
 
 y = grid_height * 3
 
+
+
 move_snap(grid_width,grid_height)
 
 grabbed = false
-isFalling = false
 
-alarm[0] = time
 
-number_in_order = 1
