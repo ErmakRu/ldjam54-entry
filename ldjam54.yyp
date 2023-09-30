@@ -33,6 +33,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"yasha","folderPath":"folders/Sprites/developers/yasha.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"developers","folderPath":"folders/Rooms/developers.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -42,6 +43,7 @@
   },
   "resources": [
     {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},},
+    {"id":{"name":"spr_character_dash","path":"sprites/spr_character_dash/spr_character_dash.yy",},},
     {"id":{"name":"spr_character_running","path":"sprites/spr_character_running/spr_character_running.yy",},},
     {"id":{"name":"room_yasha","path":"rooms/room_yasha/room_yasha.yy",},},
     {"id":{"name":"spr_character_idle","path":"sprites/spr_character_idle/spr_character_idle.yy",},},
