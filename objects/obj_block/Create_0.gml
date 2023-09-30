@@ -5,7 +5,7 @@ x = (grid_width * 7)
 
 y = grid_height * 3
 
-
+isFalling= true
 
 move_snap(grid_width,grid_height)
 
