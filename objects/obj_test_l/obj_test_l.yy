@@ -1,10 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_abstract_water",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_test_l",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -12,8 +10,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_abstract_level_obj",
-    "path": "objects/obj_abstract_level_obj/obj_abstract_level_obj.yy",
+    "name": "obj_abstract_collision",
+    "path": "objects/obj_abstract_collision/obj_abstract_collision.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -30,7 +28,13 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
-  "spriteMaskId": null,
+  "spriteId": {
+    "name": "spr_test_l",
+    "path": "sprites/spr_test_l/spr_test_l.yy",
+  },
+  "spriteMaskId": {
+    "name": "spr_test_l",
+    "path": "sprites/spr_test_l/spr_test_l.yy",
+  },
   "visible": true,
 }

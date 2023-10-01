@@ -1,4 +1,6 @@
-/// @description Update camera pos
+/// @description Update camera and water pos
+
+global.water_level -= water_rise_speed
 
 if (!camera_moving)
 {

@@ -1,6 +1,7 @@
 /// @description Insert description here
 
 global.camera_shift_direction = 1; // 1 is up, -1 is down
+global.water_level = 2272;
 
 camera_moving = false;
 camera_moving_progress = 0;
