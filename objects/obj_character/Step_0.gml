@@ -19,6 +19,21 @@ if (!obj_logic_controller.camera_moving)
 		scr_trigger_user_event_0();
 	}
 }
+
+if (global.water_level < bbox_top)
+{
+	oxygen_meter -= delta_time * oxygen_decrease_rate;
+	if (oxygen_meter <= 0)
+	{
+		obj_game.player_alive = false
+        instance_destroy()
+		obj_game.alarm[1] = 20
+	}
+}
+else
+{
+	oxygen_meter = 100;
+}
 	
 if (dashing)
 {
