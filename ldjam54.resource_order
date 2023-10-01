@@ -40,7 +40,7 @@
     {"name":"spr_test_l","order":7,"path":"sprites/spr_test_l/spr_test_l.yy",},
     {"name":"obj_abstract_water","order":10,"path":"objects/obj_abstract_water/obj_abstract_water.yy",},
     {"name":"obj_border","order":14,"path":"objects/obj_border/obj_border.yy",},
-    {"name":"obj_test_wall","order":9,"path":"objects/obj_test_wall/obj_test_wall.yy",},
+    {"name":"obj_floor","order":9,"path":"objects/obj_floor/obj_floor.yy",},
     {"name":"spr_debug_blue","order":6,"path":"sprites/spr_debug_blue/spr_debug_blue.yy",},
     {"name":"snd_squish","order":1,"path":"sounds/snd_squish/snd_squish.yy",},
     {"name":"spr_block_l","order":7,"path":"sprites/spr_block_l/spr_block_l.yy",},

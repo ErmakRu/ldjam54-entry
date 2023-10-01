@@ -18,7 +18,7 @@ if (!obj_logic_controller.camera_moving)
 		global.camera_shift_direction = 1;
 		scr_trigger_user_event_0();
 	}
-	else if (y > camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - _camera_margin)
+	else if (y > camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - _camera_margin && (obj_floor.y - y > camera_get_view_y(view_camera[0]) / 2))
 	{
 		global.camera_shift_direction = -1;
 		scr_trigger_user_event_0();
@@ -164,14 +164,28 @@ if (!current_jump_input_captured) && ((place_meeting(x + jump_ledge_buffer, y + 
    dynamic_jump_rate_v = jump_rate * extra_jump_rate_v;
    current_jump_input_captured = true;
 }
-else if (!current_jump_input_captured) && (place_meeting(x + sign(_move_input_total), y, obj_abstract_collision) && jump_buffer_count < jump_buffer) // wall jump
+else if (!current_jump_input_captured) && (place_meeting(x + 1, y, obj_abstract_collision) && jump_buffer_count < jump_buffer) // wall jump
 {
-	var _wall_inst = instance_place(x + sign(_move_input_total), y, obj_abstract_collision);
+	var _wall_inst = instance_place(x + 1, y, obj_abstract_collision);
 	if (_wall_inst != last_wall_jumped)
 	{
 		vspeed = 1 * -jump_rate;
 		dynamic_jump_rate_v = jump_rate * extra_jump_rate_v;
-		walljump_direction = -sign(_move_input_total);
+		walljump_direction = -1;
+		hspeed = 1 * h_walljump_rate * walljump_direction;
+		dynamic_jump_rate_h = h_walljump_rate * extra_jump_rate_h;
+		last_wall_jumped = _wall_inst;
+		current_jump_input_captured = true;
+	}
+}
+else if (!current_jump_input_captured) && (place_meeting(x - 1, y, obj_abstract_collision) && jump_buffer_count < jump_buffer) // wall jump
+{
+	var _wall_inst = instance_place(x - 1, y, obj_abstract_collision);
+	if (_wall_inst != last_wall_jumped)
+	{
+		vspeed = 1 * -jump_rate;
+		dynamic_jump_rate_v = jump_rate * extra_jump_rate_v;
+		walljump_direction = 1;
 		hspeed = 1 * h_walljump_rate * walljump_direction;
 		dynamic_jump_rate_h = h_walljump_rate * extra_jump_rate_h;
 		last_wall_jumped = _wall_inst;

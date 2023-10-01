@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_test_wall",
+  "name": "obj_floor",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
