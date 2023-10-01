@@ -15,6 +15,8 @@ walljump_direction = 1;
 has_double_jump = true;
 gravity_multiplier = 1;
 crawling = 1;
+oxygen_meter = 100;
+oxygen_sprite_offset = 16;
 
 // Controls
 control_left = ord("A");
