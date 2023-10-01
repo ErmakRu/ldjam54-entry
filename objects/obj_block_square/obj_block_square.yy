@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block_palka",
+  "name": "obj_block_square",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite7",
-    "path": "sprites/Sprite7/Sprite7.yy",
+    "name": "Sprite8",
+    "path": "sprites/Sprite8/Sprite8.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,17 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block_palka",
+  "name": "Object6",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Rooms",
+    "path": "folders/Rooms.yy",
   },
   "parentObjectId": {
-    "name": "obj_block",
-    "path": "objects/obj_block/obj_block.yy",
+    "name": "obj_abstract_collision",
+    "path": "objects/obj_abstract_collision/obj_abstract_collision.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite7",
-    "path": "sprites/Sprite7/Sprite7.yy",
+    "name": "Sprite4",
+    "path": "sprites/Sprite4/Sprite4.yy",
   },
   "spriteMaskId": null,
   "visible": true,
