@@ -1,6 +1,12 @@
 {
-  "FolderOrderSettings": [],
+  "FolderOrderSettings": [
+    {"name":"settings","order":3,"path":"folders/Objects/menu/settings.yy",},
+  ],
   "ResourceOrderSettings": [
+    {"name":"obj_menu_button_start","order":2,"path":"objects/obj_menu_button_start/obj_menu_button_start.yy",},
+    {"name":"obj_menu_button_back","order":4,"path":"objects/obj_menu_button_back/obj_menu_button_back.yy",},
+    {"name":"room_settings","order":1,"path":"rooms/room_settings/room_settings.yy",},
+    {"name":"obj_menu_button_quit","order":1,"path":"objects/obj_menu_button_quit/obj_menu_button_quit.yy",},
     {"name":"ac_water_speed","order":1,"path":"animcurves/ac_water_speed/ac_water_speed.yy",},
   ],
 }

@@ -47,8 +47,10 @@
     {"id":{"name":"obj_slider","path":"objects/obj_slider/obj_slider.yy",},},
     {"id":{"name":"obj_logic_controller","path":"objects/obj_logic_controller/obj_logic_controller.yy",},},
     {"id":{"name":"obj_menu_button_start","path":"objects/obj_menu_button_start/obj_menu_button_start.yy",},},
+    {"id":{"name":"obj_menu_button_back","path":"objects/obj_menu_button_back/obj_menu_button_back.yy",},},
     {"id":{"name":"obj_block_palka","path":"objects/obj_block_palka/obj_block_palka.yy",},},
     {"id":{"name":"obj_block_spawn_point","path":"objects/obj_block_spawn_point/obj_block_spawn_point.yy",},},
+    {"id":{"name":"room_settings","path":"rooms/room_settings/room_settings.yy",},},
     {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},},
     {"id":{"name":"obj_menu_button_quit","path":"objects/obj_menu_button_quit/obj_menu_button_quit.yy",},},
     {"id":{"name":"spr_character_dash","path":"sprites/spr_character_dash/spr_character_dash.yy",},},
@@ -96,6 +98,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"room_main_menu","path":"rooms/room_main_menu/room_main_menu.yy",},},
     {"roomId":{"name":"room_main_game","path":"rooms/room_main_game/room_main_game.yy",},},
+    {"roomId":{"name":"room_settings","path":"rooms/room_settings/room_settings.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
