@@ -14,6 +14,8 @@ number_in_order = 0
 alarm[0] = block_spawn_time
 player_alive = true
 
+water_accel_progress = 0;
+
 audio_play_sound(snd_main_theme, 0, true);
 
 points_number = instance_number(obj_block_spawn_point);

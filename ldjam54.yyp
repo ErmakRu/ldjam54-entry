@@ -84,7 +84,6 @@
     {"id":{"name":"obj_menu_button_settings","path":"objects/obj_menu_button_settings/obj_menu_button_settings.yy",},},
     {"id":{"name":"obj_menu_button","path":"objects/obj_menu_button/obj_menu_button.yy",},},
     {"id":{"name":"obj_block_square","path":"objects/obj_block_square/obj_block_square.yy",},},
-    {"id":{"name":"spr_oxygen_bar_outer","path":"sprites/spr_oxygen_bar_outer/spr_oxygen_bar_outer.yy",},},
     {"id":{"name":"scr_die","path":"scripts/scr_die/scr_die.yy",},},
     {"id":{"name":"spr_debug_white","path":"sprites/spr_debug_white/spr_debug_white.yy",},},
     {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},},

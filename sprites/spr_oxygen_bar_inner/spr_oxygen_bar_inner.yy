@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_oxygen_bar_inner",
-  "bbox_bottom": 63,
-  "bbox_left": 0,
-  "bbox_right": 255,
-  "bbox_top": 0,
+  "bbox_bottom": 234,
+  "bbox_left": 47,
+  "bbox_right": 647,
+  "bbox_top": 21,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7bd9cb0c-11b8-4dcb-8740-44c7c26ac96c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ccd940ea-5959-4ef6-8244-a305f0f0fa1e",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 307,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9dc70ee1-ac57-4f99-9577-31fc1ab45f5b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"359d5c22-5b24-4b64-887b-0c51e2e8dfce","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7bd9cb0c-11b8-4dcb-8740-44c7c26ac96c","path":"sprites/spr_oxygen_bar_inner/spr_oxygen_bar_inner.yy",},},},"Disabled":false,"id":"4dbe1a9f-ca75-4a37-ba49-1423628bd995","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ccd940ea-5959-4ef6-8244-a305f0f0fa1e","path":"sprites/spr_oxygen_bar_inner/spr_oxygen_bar_inner.yy",},},},"Disabled":false,"id":"6f806177-c925-46bf-84cd-f3b63515512c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 256,
+  "width": 672,
 }
