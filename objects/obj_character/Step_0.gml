@@ -27,7 +27,7 @@ if (global.water_level < bbox_top)
 	{
 		obj_game.player_alive = false
         instance_destroy()
-		obj_game.alarm[1] = 20
+		obj_logic_controller.alarm[1] = 20
 	}
 }
 else

@@ -75,6 +75,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"room_main_game","path":"rooms/room_main_game/room_main_game.yy",},},
+    {"roomId":{"name":"room_yasha","path":"rooms/room_yasha/room_yasha.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
