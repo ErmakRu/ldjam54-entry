@@ -25,11 +25,15 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_logic_controller","order":9,"path":"objects/obj_logic_controller/obj_logic_controller.yy",},
+    {"name":"obj_border_wall","order":7,"path":"objects/obj_border_wall/obj_border_wall.yy",},
     {"name":"obj_block_palka","order":6,"path":"objects/obj_block_palka/obj_block_palka.yy",},
     {"name":"spr_character_dash","order":2,"path":"sprites/spr_character_dash/spr_character_dash.yy",},
     {"name":"spr_character_running","order":1,"path":"sprites/spr_character_running/spr_character_running.yy",},
     {"name":"obj_block","order":5,"path":"objects/obj_block/obj_block.yy",},
     {"name":"obj_abstract_collision","order":2,"path":"objects/obj_abstract_collision/obj_abstract_collision.yy",},
+    {"name":"obj_abstract_level_obj","order":8,"path":"objects/obj_abstract_level_obj/obj_abstract_level_obj.yy",},
     {"name":"obj_game","order":1,"path":"objects/obj_game/obj_game.yy",},
+    {"name":"spr_debug_white","order":6,"path":"sprites/spr_debug_white/spr_debug_white.yy",},
   ],
 }
