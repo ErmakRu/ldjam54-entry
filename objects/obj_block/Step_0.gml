@@ -15,7 +15,7 @@ if place_meeting(x, y-4, obj_character)
 {
 
 	obj_logic_controller.player_alive = false
-    instance_destroy(obj_character)
+    obj_character.visible = false;
 	obj_logic_controller.alarm[1] = 20
 }
 

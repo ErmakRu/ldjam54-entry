@@ -5,6 +5,11 @@ if (global.is_paused)
 	exit;
 }
 
+if (!obj_game.player_alive)
+{
+	exit;
+}
+
 if (!obj_logic_controller.camera_moving)
 {
 	var _camera_margin = (camera_get_view_height(view_camera[0]) - obj_logic_controller.camera_window_height) / 2;
@@ -25,9 +30,9 @@ if (global.water_level < bbox_top)
 	oxygen_meter -= delta_time * oxygen_decrease_rate;
 	if (oxygen_meter <= 0)
 	{
-		obj_game.player_alive = false
-        instance_destroy()
-		obj_logic_controller.alarm[1] = 20
+		obj_game.player_alive = false;
+		visible = false;
+		obj_logic_controller.alarm[1] = 20;
 	}
 }
 else
@@ -38,7 +43,10 @@ else
 if (dashing)
 {
 	hspeed = 1 * facing * dash_rate;
-	exit;
+	if (!place_meeting(x + hspeed, y, obj_abstract_collision))
+	{
+		exit;
+	}
 }
 
 if (crawling)
@@ -212,4 +220,10 @@ else
 		facing = sign(_move_input_total)
 	else
 		facing = 1;
+}
+
+global.score += -1 * vspeed * delta_time / 100000;
+if (global.score > global.highscore)
+{
+	global.highscore = global.score;
 }
