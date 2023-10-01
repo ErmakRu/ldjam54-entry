@@ -45,6 +45,13 @@ if (jump_buffer_count < jump_buffer)
    jump_buffer_count++;
 }
 
+// Water resets things
+if (place_meeting(x, y + 1, obj_abstract_water))
+{
+	last_wall_jumped = noone;
+	has_double_jump = true;
+	gravity_multiplier = 1;
+}
 
 // No move input, brake
 // On ground
@@ -85,8 +92,13 @@ if !(place_meeting(x, y + 1, obj_abstract_collision)) && (_move_input_total * dy
 hspeed = clamp(hspeed, -move_rate * (1 - crawling / 2), move_rate * (1 - crawling / 2));
 
 // Gravity
-// Check wall hugging
-if (place_meeting(x + sign(_move_input_total), y, obj_abstract_collision))
+// Check water
+if (place_meeting(x, y, obj_abstract_water))
+{
+	var _water_inst = instance_place(x, y, obj_abstract_water);
+	vspeed += gravity_rate / 2 - water_up_rate * (bbox_bottom - _water_inst.bbox_top);
+}
+else if (place_meeting(x + sign(_move_input_total), y, obj_abstract_collision)) // Check wall hugging
 {
 	gravity_multiplier = 1;
 	if ((vspeed < 0) && !place_meeting(x, y + 1, obj_abstract_collision))
@@ -122,8 +134,8 @@ hspeed += walljump_direction * dynamic_jump_rate_h;
 
 // Jump if on / close to ground
 // Account for ledge buffer but prevent wall jumping
-if (!current_jump_input_captured) && (place_meeting(x + jump_ledge_buffer, y + 1, obj_abstract_collision) && jump_buffer_count < jump_buffer && !place_meeting(x + 1, y, obj_abstract_collision)) ||
-   (place_meeting(x - jump_ledge_buffer, y + 1, obj_abstract_collision) && jump_buffer_count < jump_buffer && !place_meeting(x - 1, y, obj_abstract_collision))
+if (!current_jump_input_captured) && ((place_meeting(x + jump_ledge_buffer, y + 1, obj_abstract_collision) || place_meeting(x + jump_ledge_buffer, y + 1, obj_abstract_water)) && jump_buffer_count < jump_buffer && !place_meeting(x + 1, y, obj_abstract_collision)) ||
+   ((place_meeting(x - jump_ledge_buffer, y + 1, obj_abstract_collision) || place_meeting(x - jump_ledge_buffer, y + 1, obj_abstract_water)) && jump_buffer_count < jump_buffer && !place_meeting(x - 1, y, obj_abstract_collision))
 {
    /*if (!audio_is_playing(snd_jump))
 	audio_play_sound(snd_jump, 0, false);*/

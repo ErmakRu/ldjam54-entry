@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_test_wall",
+  "name": "obj_test_water",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -10,8 +10,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_abstract_collision",
-    "path": "objects/obj_abstract_collision/obj_abstract_collision.yy",
+    "name": "obj_abstract_water",
+    "path": "objects/obj_abstract_water/obj_abstract_water.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_debug_gray",
-    "path": "sprites/spr_debug_gray/spr_debug_gray.yy",
+    "name": "spr_debug_blue",
+    "path": "sprites/spr_debug_blue/spr_debug_blue.yy",
   },
   "spriteMaskId": null,
   "visible": true,
