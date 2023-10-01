@@ -1,14 +1,28 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+event_inherited()
 
-	vspeed = falling_speed
-	if place_meeting(x, y-4, obj_character)
-	{
-		obj_game.player_alive = false
-        instance_destroy(obj_player)
-		obj_game.alarm[1] = 20
-	}
+if (!isFalling) {
+exit
+}
+
+vspeed = falling_speed
+
+
+
+if place_meeting(x, y-4, obj_character)
+{
+
+	obj_logic_controller.player_alive = false
+    instance_destroy(obj_character)
+	obj_logic_controller.alarm[1] = 20
+}
+
+	
+
+	
+
 
 
 
