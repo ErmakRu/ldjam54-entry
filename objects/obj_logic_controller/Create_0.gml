@@ -14,3 +14,5 @@ y = 10
 number_in_order = 0
 alarm[0] = block_spawn_time
 player_alive = true
+
+audio_play_sound(snd_main_theme, 0, true);
