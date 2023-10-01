@@ -9,7 +9,7 @@ if (points_number <= 0)
 	}
 }
 
-water_accel_progress += delta_time * water_rise_accel;
+water_accel_progress = clamp(water_accel_progress + delta_time * water_rise_accel, 0, 1);
 var _water_channel = animcurve_get_channel(ac_water_speed, 0);
 global.water_level -= water_rise_speed * animcurve_channel_evaluate(_water_channel, water_accel_progress);
 
