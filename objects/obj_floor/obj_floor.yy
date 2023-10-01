@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block_L",
+  "name": "obj_floor",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -10,8 +10,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_block",
-    "path": "objects/obj_block/obj_block.yy",
+    "name": "obj_abstract_collision",
+    "path": "objects/obj_abstract_collision/obj_abstract_collision.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_l",
-    "path": "sprites/spr_block_l/spr_block_l.yy",
+    "name": "spr_debug_gray",
+    "path": "sprites/spr_debug_gray/spr_debug_gray.yy",
   },
   "spriteMaskId": null,
   "visible": true,

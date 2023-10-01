@@ -1,17 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_test_wall",
+  "name": "obj_block_spawn_point",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_abstract_level_obj","path":"objects/obj_abstract_level_obj/obj_abstract_level_obj.yy",},"propertyId":{"name":"bind_to_camera","path":"objects/obj_abstract_level_obj/obj_abstract_level_obj.yy",},"value":"True",},
+  ],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_abstract_collision",
-    "path": "objects/obj_abstract_collision/obj_abstract_collision.yy",
+    "name": "obj_abstract_level_obj",
+    "path": "objects/obj_abstract_level_obj/obj_abstract_level_obj.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -28,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_debug_gray",
-    "path": "sprites/spr_debug_gray/spr_debug_gray.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -3,9 +3,20 @@
 
 vspeed = 0
 isFalling = false
-while place_meeting(x,y+grid_height,obj_abstract_collision) {
-	y -= grid_height
+
+var curr_x = x
+var curr_y = y
+
+x = -1000
+y = -1000
+
+while place_meeting(curr_x, curr_y,obj_abstract_collision) {
+	curr_y -= 1
 }
+
+x = curr_x
+y = curr_y
+
 obj_logic_controller.number_in_order--
 
 

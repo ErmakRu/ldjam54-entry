@@ -5,6 +5,11 @@ if (global.is_paused)
 	exit;
 }
 
+if (!obj_game.player_alive)
+{
+	exit;
+}
+
 if (!obj_logic_controller.camera_moving)
 {
 	var _camera_margin = (camera_get_view_height(view_camera[0]) - obj_logic_controller.camera_window_height) / 2;
@@ -13,7 +18,7 @@ if (!obj_logic_controller.camera_moving)
 		global.camera_shift_direction = 1;
 		scr_trigger_user_event_0();
 	}
-	else if (y > camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - _camera_margin)
+	else if (y > camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - _camera_margin && (obj_floor.y - y > camera_get_view_y(view_camera[0]) / 2))
 	{
 		global.camera_shift_direction = -1;
 		scr_trigger_user_event_0();
@@ -25,9 +30,7 @@ if (global.water_level < bbox_top)
 	oxygen_meter -= delta_time * oxygen_decrease_rate;
 	if (oxygen_meter <= 0)
 	{
-		obj_game.player_alive = false
-        instance_destroy()
-		obj_game.alarm[1] = 20
+		scr_die();
 	}
 }
 else
@@ -38,7 +41,10 @@ else
 if (dashing)
 {
 	hspeed = 1 * facing * dash_rate;
-	exit;
+	if (!place_meeting(x + hspeed, y, obj_abstract_collision))
+	{
+		exit;
+	}
 }
 
 if (crawling)
@@ -158,14 +164,28 @@ if (!current_jump_input_captured) && ((place_meeting(x + jump_ledge_buffer, y + 
    dynamic_jump_rate_v = jump_rate * extra_jump_rate_v;
    current_jump_input_captured = true;
 }
-else if (!current_jump_input_captured) && (place_meeting(x + sign(_move_input_total), y, obj_abstract_collision) && jump_buffer_count < jump_buffer) // wall jump
+else if (!current_jump_input_captured) && (place_meeting(x + 1, y, obj_abstract_collision) && jump_buffer_count < jump_buffer) // wall jump
 {
-	var _wall_inst = instance_place(x + sign(_move_input_total), y, obj_abstract_collision);
+	var _wall_inst = instance_place(x + 1, y, obj_abstract_collision);
 	if (_wall_inst != last_wall_jumped)
 	{
 		vspeed = 1 * -jump_rate;
 		dynamic_jump_rate_v = jump_rate * extra_jump_rate_v;
-		walljump_direction = -sign(_move_input_total);
+		walljump_direction = -1;
+		hspeed = 1 * h_walljump_rate * walljump_direction;
+		dynamic_jump_rate_h = h_walljump_rate * extra_jump_rate_h;
+		last_wall_jumped = _wall_inst;
+		current_jump_input_captured = true;
+	}
+}
+else if (!current_jump_input_captured) && (place_meeting(x - 1, y, obj_abstract_collision) && jump_buffer_count < jump_buffer) // wall jump
+{
+	var _wall_inst = instance_place(x - 1, y, obj_abstract_collision);
+	if (_wall_inst != last_wall_jumped)
+	{
+		vspeed = 1 * -jump_rate;
+		dynamic_jump_rate_v = jump_rate * extra_jump_rate_v;
+		walljump_direction = 1;
 		hspeed = 1 * h_walljump_rate * walljump_direction;
 		dynamic_jump_rate_h = h_walljump_rate * extra_jump_rate_h;
 		last_wall_jumped = _wall_inst;
@@ -212,4 +232,10 @@ else
 		facing = sign(_move_input_total)
 	else
 		facing = 1;
+}
+
+global.score += -1 * vspeed * delta_time / 100000;
+if (global.score > global.highscore)
+{
+	global.highscore = global.score;
 }

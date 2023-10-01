@@ -1,10 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_border_wall",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_border",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_abstract_level_obj","path":"objects/obj_abstract_level_obj/obj_abstract_level_obj.yy",},"propertyId":{"name":"bind_to_camera","path":"objects/obj_abstract_level_obj/obj_abstract_level_obj.yy",},"value":"True",},
@@ -33,9 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_debug_white",
-    "path": "sprites/spr_debug_white/spr_debug_white.yy",
+    "name": "spr_debug_gray",
+    "path": "sprites/spr_debug_gray/spr_debug_gray.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
