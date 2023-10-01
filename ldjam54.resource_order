@@ -26,6 +26,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_logic_controller","order":8,"path":"objects/obj_logic_controller/obj_logic_controller.yy",},
     {"name":"obj_block_palka","order":5,"path":"objects/obj_block_palka/obj_block_palka.yy",},
+    {"name":"obj_block_spawn_point","order":16,"path":"objects/obj_block_spawn_point/obj_block_spawn_point.yy",},
     {"name":"spr_character_dash","order":2,"path":"sprites/spr_character_dash/spr_character_dash.yy",},
     {"name":"spr_character_running","order":1,"path":"sprites/spr_character_running/spr_character_running.yy",},
     {"name":"snd_record","order":2,"path":"sounds/snd_record/snd_record.yy",},

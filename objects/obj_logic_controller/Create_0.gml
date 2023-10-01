@@ -15,3 +15,13 @@ alarm[0] = block_spawn_time
 player_alive = true
 
 audio_play_sound(snd_main_theme, 0, true);
+
+points_number = instance_number(obj_block_spawn_point);
+spawn_points = [];
+used_points = [];
+
+for (var _i = points_number - 1; _i >= 0; _i--)
+{
+	spawn_points[_i] = instance_find(obj_block_spawn_point, _i);
+	used_points[_i] = false;
+}

@@ -1,5 +1,14 @@
 /// @description Update camera and water pos
 
+if (points_number <= 0)
+{
+	points_number = array_length(spawn_points);
+	for (var _i = points_number - 1; _i >= 0; _i--)
+	{
+		used_points[_i] = false;
+	}
+}
+
 global.water_level -= water_rise_speed
 
 if (!camera_moving)
