@@ -13,6 +13,8 @@ last_wall_jumped = noone;
 current_jump_input_captured = false;
 walljump_direction = 1;
 has_double_jump = true;
+gravity_multiplier = 1;
+crawling = 1;
 
 // Controls
 control_left = ord("A");
