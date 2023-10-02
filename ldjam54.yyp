@@ -78,6 +78,7 @@
     {"id":{"name":"spr_bg3_walls","path":"sprites/spr_bg3_walls/spr_bg3_walls.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},},
+    {"id":{"name":"snd_new_record","path":"sounds/snd_new_record/snd_new_record.yy",},},
     {"id":{"name":"obj_menu_button_quit","path":"objects/obj_menu_button_quit/obj_menu_button_quit.yy",},},
     {"id":{"name":"spr_menu_star_button","path":"sprites/spr_menu_star_button/spr_menu_star_button.yy",},},
     {"id":{"name":"spr_menu_volume_less","path":"sprites/spr_menu_volume_less/spr_menu_volume_less.yy",},},
