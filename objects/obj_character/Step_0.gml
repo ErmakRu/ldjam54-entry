@@ -10,22 +10,24 @@ if (!obj_game.player_alive)
 	exit;
 }
 
+step_timer += delta_time * step_freq;
+
 if (!obj_logic_controller.camera_moving)
 {
 	var _camera_margin = (camera_get_view_height(view_camera[0]) - obj_logic_controller.camera_window_height) / 2;
 	if (y < camera_get_view_y(view_camera[0]) + _camera_margin)
 	{
-		//global.camera_shift_direction = 1;
-		//scr_trigger_user_event_0();
+		global.camera_shift_direction = 1;
+		scr_trigger_user_event_0();
 	}
 	else if (y > camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - _camera_margin && (obj_floor.y - y > camera_get_view_y(view_camera[0]) / 2))
 	{
 		//global.camera_shift_direction = -1;
-		//scr_trigger_user_event_0();
+		scr_trigger_user_event_0();
 	}
 }
 
-if (global.water_level < bbox_top)
+if (global.water_level + 400 < bbox_top)
 {
 	oxygen_meter -= delta_time * oxygen_decrease_rate;
 	if (oxygen_meter <= 0)
@@ -78,6 +80,7 @@ if (place_meeting(x, y + 1, obj_abstract_water))
 // On ground
 if (place_meeting(x, y + 1, obj_abstract_collision))
 {
+	jumping = false;
 	last_wall_jumped = noone;
 	has_double_jump = true;
 	gravity_multiplier = 1;
@@ -101,6 +104,26 @@ if (place_meeting(x, y + 1, obj_abstract_collision))
 {
    hspeed += _move_input_total * accel_rate_ground * (1 - crawling / 2);
    jumping = false;
+   if (abs(hspeed) > 2)
+	{
+		if (hspeed > 0)
+		{
+			sprite_index = spr_character_walk_right;
+		}
+		else
+		{
+			sprite_index = spr_character_walk_left;
+		}
+		if (step_timer >= 1)
+		{
+			scr_play_step();
+			step_timer = 0;
+		}
+	}
+	else
+	{
+		sprite_index = spr_character_idle;
+	}
 }
 	   
 // In air
@@ -118,9 +141,23 @@ if (place_meeting(x, y, obj_abstract_water))
 {
 	var _water_inst = instance_place(x, y, obj_abstract_water);
 	vspeed += gravity_rate / 2 - water_up_rate * (bbox_bottom - _water_inst.bbox_top);
+	audio_stop_sound(snd_wall_sliding);
+	if (!audio_is_playing(snd_dalling_and_jumping_in_water))
+	{
+		audio_play_sound(snd_dalling_and_jumping_in_water, 0, true, global.sound_volume / 100.0);
+	}
+	wallhugging = false;
 }
 else if (place_meeting(x + sign(_move_input_total), y, obj_abstract_collision)) // Check wall hugging
 {
+	if (facing > 0)
+	{
+		sprite_index = spr_character_slip_right;
+	}
+	else
+	{
+		sprite_index = spr_character_slip_left;
+	}
 	gravity_multiplier = 1;
 	if ((vspeed < 0) && !place_meeting(x, y + 1, obj_abstract_collision))
 	{
@@ -131,13 +168,22 @@ else if (place_meeting(x + sign(_move_input_total), y, obj_abstract_collision)) 
 	   vspeed += wallhug_gravity_rate;
 	}
 	vspeed = clamp(vspeed, -10000, wallhug_gravity_vspeed);
+	audio_stop_sound(snd_dalling_and_jumping_in_water);
+	if (!audio_is_playing(snd_wall_sliding))
+	{
+		audio_play_sound(snd_wall_sliding, 0, true, global.sound_volume / 100.0);
+	}
+	wallhugging = true;
 }
 else
 {
+	audio_stop_sound(snd_wall_sliding);
+	audio_stop_sound(snd_dalling_and_jumping_in_water);
 	if ((vspeed < gravity_vspeed) && !place_meeting(x, y + 1, obj_abstract_collision))
 	{
 	   vspeed += gravity_rate * gravity_multiplier;
 	}
+	wallhugging = false;
 }
 
 if (dynamic_jump_rate_h > 0)
@@ -212,6 +258,8 @@ if (place_meeting(x, y + vspeed, obj_abstract_collision)) {
    }
    
    vspeed = 0;
+   
+   scr_play_land();
 }
 
 // Diagonal
@@ -232,6 +280,30 @@ else
 		facing = sign(_move_input_total)
 	else
 		facing = 1;
+}
+
+if (jumping && !wallhugging)
+{
+	if (facing < 0)
+	{
+		sprite_index = spr_character_jump_right;
+	}
+	else
+	{
+		sprite_index = spr_character_jump_left;
+	}
+}
+
+if (crawling)
+{
+	if (facing < 0)
+	{
+		sprite_index = spr_character_crawl_right;
+	}
+	else
+	{
+		sprite_index = spr_character_crawl_left;
+	}
 }
 
 global.score += -1 * vspeed * delta_time / 100000;

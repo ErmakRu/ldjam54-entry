@@ -20,6 +20,8 @@ player_alive = true
 
 water_accel_progress = 0;
 
+audio_play_sound(snd_game_start, 0, false, global.sound_volume / 100.0);
+
 audio_play_sound(snd_main_theme, 0, true, global.music_volume / 100.0);
 
 blocks_spawned = 0;

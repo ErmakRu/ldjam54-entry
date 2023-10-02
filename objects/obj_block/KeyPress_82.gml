@@ -27,6 +27,10 @@ if place_meeting(curr_x, curr_y, obj_abstract_collision)
 {
 	image_angle -= 90
 }
+else
+{
+	audio_play_sound(snd_objects_rotation, 0, false, global.sound_volume / 100.0);
+}
 
 x = curr_x
 y = curr_y

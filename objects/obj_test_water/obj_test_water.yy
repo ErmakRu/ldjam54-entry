@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_debug_blue",
-    "path": "sprites/spr_debug_blue/spr_debug_blue.yy",
+    "name": "spr_water",
+    "path": "sprites/spr_water/spr_water.yy",
   },
   "spriteMaskId": null,
   "visible": true,

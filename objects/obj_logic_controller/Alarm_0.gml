@@ -1,6 +1,6 @@
 /// @description Insert description here
 
-var _blocks = [obj_block_L, obj_block_palka, obj_block_square]
+var _blocks = [obj_block_stick, obj_block_stone, obj_block_key, obj_block_chandelier]
 var _select = floor(random_range(0, array_length(_blocks) - 1))
 
 if (player_alive)
@@ -24,7 +24,7 @@ if (player_alive)
 		}
 		else
 		{
-			instance_create_layer(spawn_points[_chosen_point_index].x, spawn_points[_chosen_point_index].y, "Instances", obj_block_magic);
+			instance_create_layer(spawn_points[_chosen_point_index].x, spawn_points[_chosen_point_index].y, "Instances", obj_block_shoe);
 		}
 		
 		blocks_spawned += 1;

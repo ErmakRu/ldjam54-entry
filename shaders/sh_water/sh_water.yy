@@ -4,7 +4,7 @@
   "name": "sh_water",
   "parent": {
     "name": "Shaders",
-    "path": "folders/Shaders.yy",
+    "path": "folders/Sequences/Shaders.yy",
   },
   "type": 1,
 }

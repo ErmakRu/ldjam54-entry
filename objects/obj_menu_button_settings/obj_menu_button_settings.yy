@@ -7,7 +7,7 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_menu_button","path":"objects/obj_menu_button/obj_menu_button.yy",},"propertyId":{"name":"button_text","path":"objects/obj_menu_button/obj_menu_button.yy",},"value":"SETTINGS",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_menu_button","path":"objects/obj_menu_button/obj_menu_button.yy",},"propertyId":{"name":"button_text","path":"objects/obj_menu_button/obj_menu_button.yy",},"value":"",},
   ],
   "parent": {
     "name": "menu",
@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_debug_gray",
-    "path": "sprites/spr_debug_gray/spr_debug_gray.yy",
+    "name": "spr_menu_settings_button",
+    "path": "sprites/spr_menu_settings_button/spr_menu_settings_button.yy",
   },
   "spriteMaskId": null,
   "visible": true,

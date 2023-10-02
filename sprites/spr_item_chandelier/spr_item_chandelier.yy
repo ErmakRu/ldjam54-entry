@@ -7,7 +7,7 @@
   "bbox_right": 675,
   "bbox_top": 6,
   "bboxMode": 0,
-  "collisionKind": 0,
+  "collisionKind": 1,
   "collisionTolerance": 0,
   "DynamicTexturePage": false,
   "edgeFiltering": false,
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Items",
-    "path": "folders/Sprites/Items.yy",
+    "name": "chandelier",
+    "path": "folders/Sprites/Items/chandelier.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
