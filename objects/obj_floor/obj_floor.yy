@@ -10,8 +10,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_abstract_collision",
-    "path": "objects/obj_abstract_collision/obj_abstract_collision.yy",
+    "name": "obj_abstract_block",
+    "path": "objects/obj_abstract_block/obj_abstract_block.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

@@ -1,7 +1,7 @@
 /// @description Insert description here
 
-var _blocks = [obj_block_stick, obj_block_stone, obj_block_key, obj_block_chandelier]
-var _select = floor(random_range(0, array_length(_blocks) - 1))
+var _blocks = [obj_block_stick, obj_block_stone, obj_block_key, obj_block_chandelier, obj_block_energizer]
+var _select = irandom_range(0, array_length(_blocks) - 1);
 
 if (player_alive)
 {

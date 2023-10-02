@@ -13,6 +13,14 @@ if (jumping)
 	}
 	draw_sprite(sprite_index, _frame, x, y);
 }
+else if (crawling)
+{
+	if (abs(hspeed) < 3)
+	{
+		draw_sprite(sprite_index, 0, x, y);
+	}
+	draw_self();
+}
 else
 {
 	draw_self();
