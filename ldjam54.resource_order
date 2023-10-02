@@ -23,6 +23,7 @@
     {"name":"spr_bg_light","order":8,"path":"sprites/spr_bg_light/spr_bg_light.yy",},
     {"name":"spr_debug_gray","order":3,"path":"sprites/spr_debug_gray/spr_debug_gray.yy",},
     {"name":"spr_test_l","order":4,"path":"sprites/spr_test_l/spr_test_l.yy",},
+    {"name":"obj_block_magic","order":5,"path":"objects/obj_block_magic/obj_block_magic.yy",},
     {"name":"spr_slider","order":11,"path":"sprites/spr_slider/spr_slider.yy",},
     {"name":"spr_bar","order":10,"path":"sprites/spr_bar/spr_bar.yy",},
     {"name":"obj_light","order":1,"path":"objects/obj_light/obj_light.yy",},

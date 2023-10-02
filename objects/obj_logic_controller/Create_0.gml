@@ -22,6 +22,8 @@ water_accel_progress = 0;
 
 audio_play_sound(snd_main_theme, 0, true, global.music_volume / 100.0);
 
+blocks_spawned = 0;
+
 points_number = instance_number(obj_block_spawn_point);
 spawn_points = [];
 used_points = [];

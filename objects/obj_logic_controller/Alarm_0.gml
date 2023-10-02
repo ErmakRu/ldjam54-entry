@@ -1,11 +1,11 @@
 /// @description Insert description here
 
-var _blocks= [obj_block_L, obj_block_palka, obj_block_square]
+var _blocks = [obj_block_L, obj_block_palka, obj_block_square]
 var _select = floor(random_range(0, array_length(_blocks) - 1))
 
 if (player_alive)
 {
-	if (number_in_order <= 3)
+	if (number_in_order < 3)
 	{
 		if (points_number <= 0)
 		{
@@ -18,7 +18,16 @@ if (player_alive)
 		}
 		points_number -= 1;
 		used_points[_chosen_point_index] = true;
-		instance_create_layer(spawn_points[_chosen_point_index].x, spawn_points[_chosen_point_index].y, "Instances", _blocks[_select])
+		if (blocks_spawned % 15 !=0 || blocks_spawned == 0)
+		{
+			instance_create_layer(spawn_points[_chosen_point_index].x, spawn_points[_chosen_point_index].y, "Instances", _blocks[_select]);
+		}
+		else
+		{
+			instance_create_layer(spawn_points[_chosen_point_index].x, spawn_points[_chosen_point_index].y, "Instances", obj_block_magic);
+		}
+		
+		blocks_spawned += 1;
 		number_in_order += 1;
 	}
 	

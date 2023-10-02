@@ -10,7 +10,8 @@ var curr_y = y
 x = -1000
 y = -1000
 
-while place_meeting(curr_x, curr_y,obj_abstract_collision) {
+while place_meeting(curr_x, curr_y,obj_abstract_collision)
+{
 	curr_y -= 1
 }
 
