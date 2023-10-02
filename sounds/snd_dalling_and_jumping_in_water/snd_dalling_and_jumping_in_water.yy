@@ -1,23 +1,23 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_death",
+  "name": "snd_dalling_and_jumping_in_water",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
   "bitDepth": 1,
   "bitRate": 128,
-  "compression": 1,
+  "compression": 0,
   "conversionMode": 0,
-  "duration": 3.216961,
+  "duration": 1.147302,
   "parent": {
     "name": "Sound_Character",
     "path": "folders/Sounds/Sound_Character.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_death.wav",
+  "soundFile": "snd_dalling_and_jumping_in_water.wav",
   "type": 0,
-  "volume": 0.3,
+  "volume": 1.0,
 }
