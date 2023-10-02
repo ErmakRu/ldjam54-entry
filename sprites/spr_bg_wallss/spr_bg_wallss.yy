@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_bg_wallss",
-  "bbox_bottom": 564,
+  "bbox_bottom": 1317,
   "bbox_left": 0,
   "bbox_right": 3839,
   "bbox_top": 0,
@@ -32,7 +32,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 565,
+  "height": 1318,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b38b5e61-03d1-4755-a6c0-0346a2d9eb4b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},

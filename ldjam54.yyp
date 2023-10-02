@@ -142,6 +142,7 @@
     {"id":{"name":"spr_bg1s2_walls","path":"sprites/spr_bg1s2_walls/spr_bg1s2_walls.yy",},},
     {"id":{"name":"spr_test_l","path":"sprites/spr_test_l/spr_test_l.yy",},},
     {"id":{"name":"obj_abstract_water","path":"objects/obj_abstract_water/obj_abstract_water.yy",},},
+    {"id":{"name":"obj_block_magic","path":"objects/obj_block_magic/obj_block_magic.yy",},},
     {"id":{"name":"scr_trigger_user_event_0","path":"scripts/scr_trigger_user_event_0/scr_trigger_user_event_0.yy",},},
     {"id":{"name":"spr_slider","path":"sprites/spr_slider/spr_slider.yy",},},
     {"id":{"name":"spr_debug_blue","path":"sprites/spr_debug_blue/spr_debug_blue.yy",},},
@@ -193,8 +194,8 @@
     {"id":{"name":"room_main_game","path":"rooms/room_main_game/room_main_game.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"room_main_menu","path":"rooms/room_main_menu/room_main_menu.yy",},},
     {"roomId":{"name":"room_main_game","path":"rooms/room_main_game/room_main_game.yy",},},
+    {"roomId":{"name":"room_main_menu","path":"rooms/room_main_menu/room_main_menu.yy",},},
     {"roomId":{"name":"room_settings","path":"rooms/room_settings/room_settings.yy",},},
   ],
   "templateType": "game",

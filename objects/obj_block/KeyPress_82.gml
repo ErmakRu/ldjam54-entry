@@ -10,6 +10,11 @@ if (!controlled)
 	exit;
 }
 
+if (disable_rotation)
+{
+	exit;
+}
+
 image_angle += 90
 
 var curr_x = x
