@@ -7,6 +7,20 @@
     {"name":"decor","order":3,"path":"folders/Objects/decor.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"settings","order":3,"path":"folders/Objects/menu/settings.yy",},
+  ],
+  "ResourceOrderSettings": [
+    {"name":"obj_menu_button_start","order":2,"path":"objects/obj_menu_button_start/obj_menu_button_start.yy",},
+    {"name":"obj_menu_button_back","order":4,"path":"objects/obj_menu_button_back/obj_menu_button_back.yy",},
+    {"name":"room_settings","order":1,"path":"rooms/room_settings/room_settings.yy",},
+    {"name":"obj_menu_button_quit","order":1,"path":"objects/obj_menu_button_quit/obj_menu_button_quit.yy",},
+    {"name":"parallax","order":2,"path":"folders/Objects/parallax.yy",},
+    {"name":"seams","order":1,"path":"folders/Sprites/backgrounds/seams.yy",},
+    {"name":"1s2","order":1,"path":"folders/Sprites/backgrounds/seams/1s2.yy",},
+    {"name":"2","order":2,"path":"folders/Sprites/backgrounds/2.yy",},
+    {"name":"decor","order":3,"path":"folders/Objects/decor.yy",},
+  ],
+  "ResourceOrderSettings": [
     {"name":"spr_bg1_3","order":2,"path":"sprites/spr_bg1_3/spr_bg1_3.yy",},
     {"name":"obj_auto_parallax_1","order":1,"path":"objects/obj_auto_parallax_1/obj_auto_parallax_1.yy",},
     {"name":"ac_water_speed","order":1,"path":"animcurves/ac_water_speed/ac_water_speed.yy",},

@@ -1,19 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bar",
+  "name": "obj_menu_button_back",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "settings",
-    "path": "folders/Objects/menu/settings.yy",
+    "name": "menu",
+    "path": "folders/Objects/menu.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_menu_button",
+    "path": "objects/obj_menu_button/obj_menu_button.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_slider",
-    "path": "sprites/spr_slider/spr_slider.yy",
+    "name": "spr_debug_gray",
+    "path": "sprites/spr_debug_gray/spr_debug_gray.yy",
   },
   "spriteMaskId": null,
   "visible": true,
