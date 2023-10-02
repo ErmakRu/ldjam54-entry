@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bg1_4",
-    "path": "sprites/spr_bg1_4/spr_bg1_4.yy",
+    "name": "spr_bg1_walls",
+    "path": "sprites/spr_bg1_walls/spr_bg1_walls.yy",
   },
   "spriteMaskId": null,
   "visible": true,

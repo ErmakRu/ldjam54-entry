@@ -15,13 +15,13 @@ if (!obj_logic_controller.camera_moving)
 	var _camera_margin = (camera_get_view_height(view_camera[0]) - obj_logic_controller.camera_window_height) / 2;
 	if (y < camera_get_view_y(view_camera[0]) + _camera_margin)
 	{
-		global.camera_shift_direction = 1;
-		scr_trigger_user_event_0();
+		//global.camera_shift_direction = 1;
+		//scr_trigger_user_event_0();
 	}
 	else if (y > camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - _camera_margin && (obj_floor.y - y > camera_get_view_y(view_camera[0]) / 2))
 	{
-		global.camera_shift_direction = -1;
-		scr_trigger_user_event_0();
+		//global.camera_shift_direction = -1;
+		//scr_trigger_user_event_0();
 	}
 }
 
