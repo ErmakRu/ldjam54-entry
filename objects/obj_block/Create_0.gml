@@ -8,4 +8,6 @@ move_snap(grid_width,grid_height)
 
 grabbed = false
 
+controlled = false;
+
 

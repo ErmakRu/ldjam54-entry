@@ -1,6 +1,12 @@
 /// @description Insert description here
 
-if (!isFalling) {
+if (!isFalling)
+{
+	exit;
+}
+
+if (!controlled)
+{
 	exit;
 }
 

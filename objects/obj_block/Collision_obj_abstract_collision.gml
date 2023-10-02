@@ -19,4 +19,10 @@ y = curr_y
 
 obj_logic_controller.number_in_order--
 
+if (controlled)
+{
+	controlled = false;
+	obj_logic_controller.controlled_block_set = false;
+}
+
 

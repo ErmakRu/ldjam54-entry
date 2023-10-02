@@ -22,6 +22,8 @@ points_number = instance_number(obj_block_spawn_point);
 spawn_points = [];
 used_points = [];
 
+controlled_block_set = false;
+
 for (var _i = points_number - 1; _i >= 0; _i--)
 {
 	spawn_points[_i] = instance_find(obj_block_spawn_point, _i);

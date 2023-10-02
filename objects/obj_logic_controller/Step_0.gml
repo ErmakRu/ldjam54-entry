@@ -1,5 +1,30 @@
 /// @description Update camera and water pos
 
+if (!controlled_block_set)
+{
+	var _nearest_block = noone;
+	with (obj_block)
+	{
+		if (self.isFalling)
+		{
+			if (_nearest_block == noone)
+			{
+				_nearest_block = self;
+			}
+			else if (_nearest_block.y < self.y)
+			{
+				_nearest_block = self;
+			}
+		}
+	}
+	
+	if (_nearest_block != noone)
+	{
+		_nearest_block.controlled = true;
+		controlled_block_set = true;
+	}
+}
+
 if (points_number <= 0)
 {
 	points_number = array_length(spawn_points);
