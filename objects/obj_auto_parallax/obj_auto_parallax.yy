@@ -42,7 +42,10 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"authority","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},
   ],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_bg_plan1",
+    "path": "sprites/spr_bg_plan1/spr_bg_plan1.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

@@ -30,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_bg_plan1",
+    "path": "sprites/spr_bg_plan1/spr_bg_plan1.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
