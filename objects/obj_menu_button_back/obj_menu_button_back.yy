@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_debug_gray",
-    "path": "sprites/spr_debug_gray/spr_debug_gray.yy",
+    "name": "spr_menu_back",
+    "path": "sprites/spr_menu_back/spr_menu_back.yy",
   },
   "spriteMaskId": null,
   "visible": true,

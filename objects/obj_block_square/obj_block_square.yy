@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_square",
-    "path": "sprites/spr_square/spr_square.yy",
+    "name": "spr_item_key",
+    "path": "sprites/spr_item_key/spr_item_key.yy",
   },
   "spriteMaskId": null,
   "visible": true,

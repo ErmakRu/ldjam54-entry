@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_slider",
-    "path": "sprites/spr_slider/spr_slider.yy",
+    "name": "spr_menu_bar",
+    "path": "sprites/spr_menu_bar/spr_menu_bar.yy",
   },
   "spriteMaskId": null,
   "visible": true,

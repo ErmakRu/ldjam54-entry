@@ -34,10 +34,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"walls_seam_asset","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"spr_bg_wallss","varType":5,},
   ],
   "solid": false,
-  "spriteId": {
-    "name": "spr_bg_walls",
-    "path": "sprites/spr_bg_walls/spr_bg_walls.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
