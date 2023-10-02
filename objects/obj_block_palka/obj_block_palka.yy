@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite7",
-    "path": "sprites/Sprite7/Sprite7.yy",
+    "name": "spr_item_energy_drink",
+    "path": "sprites/spr_item_energy_drink/spr_item_energy_drink.yy",
   },
   "spriteMaskId": null,
   "visible": true,

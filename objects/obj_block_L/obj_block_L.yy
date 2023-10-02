@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_l",
-    "path": "sprites/spr_block_l/spr_block_l.yy",
+    "name": "spr_item_stick",
+    "path": "sprites/spr_item_stick/spr_item_stick.yy",
   },
   "spriteMaskId": null,
   "visible": true,
