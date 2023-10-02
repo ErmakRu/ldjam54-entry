@@ -5,7 +5,7 @@
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_auto_parallax","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"propertyId":{"name":"scroll_amount","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"value":"100",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_auto_parallax","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"propertyId":{"name":"scroll_amount","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"value":"400",},
   ],
   "parent": {
     "name": "parallax",
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bg1_1",
-    "path": "sprites/spr_bg1_1/spr_bg1_1.yy",
+    "name": "spr_bg_plan1",
+    "path": "sprites/spr_bg_plan1/spr_bg_plan1.yy",
   },
   "spriteMaskId": null,
   "visible": true,

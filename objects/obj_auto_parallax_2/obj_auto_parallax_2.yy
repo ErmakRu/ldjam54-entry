@@ -5,7 +5,9 @@
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_auto_parallax","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"propertyId":{"name":"scroll_amount","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"value":"120",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_auto_parallax","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"propertyId":{"name":"scroll_amount","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"value":"480",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_auto_parallax","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"propertyId":{"name":"background_asset","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"value":"spr_bg_plan2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_auto_parallax","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"propertyId":{"name":"background_seam_asset","path":"objects/obj_auto_parallax/obj_auto_parallax.yy",},"value":"spr_bg_plan2s",},
   ],
   "parent": {
     "name": "parallax",
@@ -31,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bg1_2",
-    "path": "sprites/spr_bg1_2/spr_bg1_2.yy",
+    "name": "spr_bg_plan2",
+    "path": "sprites/spr_bg_plan2/spr_bg_plan2.yy",
   },
   "spriteMaskId": null,
   "visible": true,
