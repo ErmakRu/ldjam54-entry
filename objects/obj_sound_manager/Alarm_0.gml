@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+audio_play_sound(snd_main_theme,1,0)
 
-lock = false;
-x = obj_bar.x + global.music_volume*obj_slider.sprite_width/100
+
+
+

@@ -66,6 +66,7 @@
     {"id":{"name":"obj_abstract_collision","path":"objects/obj_abstract_collision/obj_abstract_collision.yy",},},
     {"id":{"name":"ac_camera","path":"animcurves/ac_camera/ac_camera.yy",},},
     {"id":{"name":"obj_block_L","path":"objects/obj_block_L/obj_block_L.yy",},},
+    {"id":{"name":"obj_sound_manager","path":"objects/obj_sound_manager/obj_sound_manager.yy",},},
     {"id":{"name":"obj_bar","path":"objects/obj_bar/obj_bar.yy",},},
     {"id":{"name":"obj_abstract_level_obj","path":"objects/obj_abstract_level_obj/obj_abstract_level_obj.yy",},},
     {"id":{"name":"spr_debug_gray","path":"sprites/spr_debug_gray/spr_debug_gray.yy",},},

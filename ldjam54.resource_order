@@ -8,5 +8,6 @@
     {"name":"room_settings","order":1,"path":"rooms/room_settings/room_settings.yy",},
     {"name":"obj_menu_button_quit","order":1,"path":"objects/obj_menu_button_quit/obj_menu_button_quit.yy",},
     {"name":"ac_water_speed","order":1,"path":"animcurves/ac_water_speed/ac_water_speed.yy",},
+    {"name":"obj_sound_manager","order":1,"path":"objects/obj_sound_manager/obj_sound_manager.yy",},
   ],
 }

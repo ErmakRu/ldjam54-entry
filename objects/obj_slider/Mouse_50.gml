@@ -6,9 +6,8 @@ if (instance_position(mouse_x,mouse_y,obj_bar) or instance_position(mouse_x,mous
 if(lock=true)
 {
 	x = mouse_x
-	x = clamp(x, obj_slider.x, obj_slider.x+obj_slider.sprite_width)
-	global.music_volume = (mouse_x - obj_slider.x)/obj_slider.sprite_width
-	audio_master_gain(global.music_volume)
+	x = clamp(x, obj_bar.x, obj_bar.x+obj_bar.sprite_width)
+	global.music_volume = ((x - obj_bar.x)/obj_bar.sprite_width) *100
 }
 
 
